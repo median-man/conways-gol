@@ -33,11 +33,16 @@ body {
 }
 
 .cell:hover {
-  background-color: #aaa;
+  background-color: #008cba;
+  opacity: 0.3;
 }
 
 .cell:checked {
   background-color: #333;
+}
+
+.cell:checked:hover {
+  opacity: 0.1;
 }
 
 .cell:focus {
