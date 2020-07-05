@@ -1,10 +1,13 @@
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+.hide {
+  display: none;
 }
 
 .grid {
@@ -24,6 +27,8 @@ body {
   border-collapse: collapse;
   box-sizing: border-box;
   border: 1px solid #333;
+  height: 2.5em;
+  width: 2.5em;
   margin: 0;
   padding: 0;
   appearance: none;
@@ -50,17 +55,19 @@ body {
 }
 
 .controls {
-  padding-top: 10px;
-  width: 100%;
+  padding: 0.7em;
 }
 
 .btn {
   width: 100%;
+  max-width: 15em;
   padding: 0.5em;
   margin-top: 0.5em;
-  color: #eee;
+  color: #fff;
   cursor: pointer;
   transition-duration: 0.3s;
+  border-width: 0.125em;
+  border-style: solid;
 }
 
 .btn:focus {
@@ -69,7 +76,7 @@ body {
 
 .btn_default {
   background-color: #555;
-  border: 2px solid #555;
+  border-color: #555;
 }
 
 .btn_default:hover {
@@ -79,7 +86,7 @@ body {
 
 .btn_next {
   background-color: #008cba;
-  border: 2px solid #008cba;
+  border-color: #008cba;
 }
 
 .btn_next:hover {
@@ -89,10 +96,31 @@ body {
 
 .btn_reset {
   background-color: #f44336;
-  border: 2px solid #f44336;
+  border-color: #f44336;
 }
 
 .btn_reset:hover {
   background-color: #fff;
-  color: #f44336
+  color: #f44336;
+}
+
+.btn_play {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.btn_play:hover {
+  background-color: #fff;
+  color: #4caf50;
+}
+
+.btn_play.btn_play__playing {
+  background-color: #fff;
+  color: #4caf50;
+}
+
+.btn_play.btn_play.btn_play__playing:hover {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: #fff;
 }
