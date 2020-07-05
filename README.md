@@ -12,7 +12,7 @@ Controls are provided to manipulate the game. Click on any cell in the grid to t
 
 ## Note
 
-This history size is unbounded. You will eventually run out of it if you leave
+The history size is unbounded. You will eventually use up available memory if you leave
 the page open and playing long enough.
 
 [wiki-cgol]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
